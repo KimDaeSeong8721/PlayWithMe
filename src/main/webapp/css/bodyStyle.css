@@ -1,0 +1,1527 @@
+@charset "UTF-8";
+
+/*::-moz-selection{background:#29c05e;color:#fff;text-shadow:none}
+::selection{background:#29c05e;color:#fff;text-shadow:none}*/
+
+/*상단메뉴*/
+
+/*
+#menu_more, #menu_logo, #menu_logo2, .conn, #malert tr td{
+    background-image:url('images/menu/btn_menu_kor_170617.png');
+    background-repeat:no-repeat;
+}*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+dl, ul, ol, menu, li {
+	list-style: none;
+}
+
+html {
+	-webkit-text-size-adjust: none;
+	/*-webkit-text-size-adjust:none; 텍스트의 크기를 자동으로 조절하지 말라는 뜻*/
+	background-color: #fff;
+	background-image: none;
+}
+
+form, iframe, textarea, img {
+	margin: 0;
+	padding: 0;
+	border-spacing: 0;
+	border: 0;
+	-webkit-border-radius: 0;
+	-webkit-appearance: none
+}
+
+a {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* 서브메뉴 */
+#submenu {
+	margin: 0 auto;
+	padding: 0 0px;
+	width: 100%;
+	height: 50px;
+	/*height: 50px;*/
+	background-color: #FFF;
+}
+
+#submenucon {
+	margin: 0 auto;
+	padding: 0 0px;
+	min-width: 1000px;
+	max-width: 1000px;
+	height: 50px;
+	background-color: #FFF;
+}
+#submenucon ul{
+	margin :0;
+	padding:0;
+	height: 50px;
+	list-style: none;
+	text-align:center;
+	}
+	
+#submenucon ul.board{
+	text-align:left;
+}
+	
+#submenucon li:hover div
+{
+
+	top :7px;
+	background-color: #f7f6fe;		
+	border: 1px solid #f7f6fe;
+}
+#submenucon li.select div
+{
+		
+	border: 2px solid #d7d0fa;
+	background-color: #fdfcff;
+}
+
+#submenucon li.select a
+{
+	color: #54469f;
+}
+
+#submenucon li
+{
+	height: 100%;
+	display: inline-block;
+	position:relative;
+}
+#submenucon li div
+	{
+	top:10px;
+	position:relative;
+	margin: 0px 0px 3px 10px;
+	padding: 6px 7px 6px 7px;
+	height: 37px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	line-height: 22px;
+	color: #000;
+
+	box-sizing: border-box;
+	background-color: #FFF;
+	box-shadow: 1px 2px 13px 2px rgba(71, 84, 112, 0.10);
+}
+
+#submenucon li a div p
+	{
+	color: #54469f;
+	letter-spacing:-2px; 
+	font-size: 13px;
+	font-weight: bold;
+}
+
+
+/* FindParty select 메뉴 */
+#container.board div.wrap divboard div.select{
+	margin: 0 auto;
+	padding: 0 0px;
+	width: 100%;
+	height: 50px;
+	/*height: 50px;*/
+	background-color: rgb(255, 0, 0);
+}
+
+#container.board div.selectcon {
+	margin: 0 auto;
+	padding: 0 0px;
+	min-width: 1000px;
+	max-width: 1000px;
+	height: 50px;
+	background-color: #FFF;
+}
+#container.board div.selectcon ul{
+	margin :0;
+	padding:0;
+	height: 50px;
+	list-style: none;
+	text-align:center;
+	}
+	
+#container.board div.selectcon ul.board{
+	text-align:left;
+}
+	
+#container.board div.selectcon li:hover div
+{
+
+	top :7px;
+	background-color: #f7f6fe;		
+	border: 1px solid #f7f6fe;
+}
+#container.board div.selectcon li.select div
+{
+		
+	border: 2px solid #d7d0fa;
+	background-color: #fdfcff;
+}
+
+#container.board div.selectcon li.select a
+{
+	color: #54469f;
+}
+
+#container.board div.selectcon li
+{
+	height: 100%;
+	display: inline-block;
+	position:relative;
+}
+#container.board div.selectcon li div
+	{
+	top:10px;
+	position:relative;
+	margin: 0px 0px 3px 10px;
+	padding: 6px 7px 6px 7px;
+	height: 37px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	line-height: 22px;
+	color: #000;
+
+	box-sizing: border-box;
+	background-color: #FFF;
+	box-shadow: 1px 2px 13px 2px rgba(71, 84, 112, 0.10);
+}
+
+#container.board div.selectcon li a div p
+	{
+	color: #54469f;
+	letter-spacing:-2px; 
+	font-size: 13px;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body 본문 내용*/
+
+#body.community {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background: #FFF;
+	border-bottom: 1px solid #FFF;
+}
+
+#container {
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+	padding: 0 0px;
+	min-width: 1000px;
+	max-width: 1000px;
+	background-color: #FFF;
+}
+
+#container hr {
+	clear: both;
+	width: 100%;
+	height: 0;
+	border: 0;
+}
+/* 좌측 패널 */
+#container div.leftside {
+	margin: 0;
+	padding: 0 0px;
+	width: 200px;
+	height: 1000px;
+	background-color: #FFF;
+}
+/* 내가 쓴글 보기*/
+#container>div.rightside div.view {
+	margin: 4px 0px 0px 8px;
+	width: 175px;
+	height: 42px;
+	border: 1px solid #b8b0e0;
+	overflow: hidden;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0px 2px 10px 1px rgba(71, 84, 112, 0.15);
+}
+
+#container>div.rightside div.view:hover
+
+{
+		cursor:pointer
+		}
+
+
+
+#container div.rightside>div.view>p {
+	padding-top : 10px;
+	margin-bottom: 5px;
+	line-height: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #54469f;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+}
+/* 프로필 */
+#container>div.rightside div.profile {
+	margin: 10px 0px 0px 8px;
+	width: 175px;
+	height: 224px;
+	border: 1px solid #b8b0e0;
+	overflow: hidden;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0px 2px 10px 1px rgba(71, 84, 112, 0.15);
+}
+
+#container div.profile>div.logged {
+	padding: 15px;
+}
+
+#container div.profile>div.logged div.exp_bar {
+	display: block;
+	margin: 1px auto;
+	padding : 0px;
+	width: 130px;
+	height: 15px;
+	border-radius: 6px;
+	border: 1px solid #b8b0e0;
+	overflow: hidden;
+	
+	border-radius: 4px;
+	box-shadow: 0px 2px 10px 1px rgba(71, 84, 112, 0.15);
+}
+
+
+
+#container div.profile>div.logged> div.exp_bar div.filled {
+	padding :0px;
+	float: left;
+    background-color: #b8b0e0;
+	width: 5%;
+	height: 15px;
+}
+
+
+#container div.profile>div.logged>img.picture {
+	display: block;
+	margin: 15px auto;
+	width: 60px;
+	height: 60px;
+	border-radius: 6px;
+}
+
+#container div.profile>div.logged>p.nickname {
+	margin-bottom: 5px;
+	line-height: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #393939;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#container div.profile>div.logged>p.message {
+	margin-bottom: 5px;
+	line-height: 20px;
+	white-space: nowrap;
+	overflow: visible;
+	text-overflow: ellipsis;
+	color: #54469f;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#container div.profile>div.logged>p.level {
+	margin-bottom: 5px;
+	line-height: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #a8a8a8;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#container div.profile>div.logged>ul {
+	list-style-type: none;
+	text-decoration: none
+}
+
+#container div.profile>div.logged>ul.buttons {
+	margin-top: 15px;
+}
+
+#container div.profile>div.logged>ul.buttons>li {
+	float: left;
+	width: 50%;
+}
+
+#container div.profile>div.logged>ul.buttons>li>a {
+	display: block;
+	margin-right: 5px;
+	border: 1px solid #b8b0e0;
+	border-radius: 3px;
+	line-height: 25px;
+	color: #737373;
+	font-size: 13px;
+	text-align: center;
+}
+
+#container div.profile>div.logged>ul.buttons>li:last-child>a {
+	margin-right: 0;
+}
+
+/* 커뮤니티 중앙 */
+#container.community div.wrap {
+	margin: 0;
+	padding: 0;
+	width: 610px;
+	background-color: #FFF;
+}
+
+#container.community div.main {
+	margin: 10px 0 0 10px;
+	padding: 0;
+	width: 605px;
+	background-color: #FFF;
+}
+
+#container.community div.banner {
+	display: block;
+	width: 100%;
+}
+
+#container.community div.banner div.banner-wrap {
+	float: left;
+	margin: 10px 5px 5px 10px;
+	padding: 0px;
+	width: 597px;
+	border-radius: 5px;
+	border: 1px solid #b8b0e0;
+	box-shadow: 0px 2px 10px 1px rgba(71, 84, 112, 0.15);
+	overflow: hidden;
+}
+
+#container.community div.banner img.banner {
+	width: 100%;
+}
+/* 커뮤니티 HOME */
+#container.community div.main div.card {
+	float: left;
+	margin: 0px 5px 5px 0px;
+	width: 295px;
+	border: 1px solid #b8b0e0;
+	border-radius: 3px;
+	overflow: hidden;
+	background-color: #fff;
+	box-shadow: 5px 2px 10px 1px rgba(71, 84, 112, 0.15);
+}
+
+#container.community div.card>div.board>a.list>p {
+	height: 17px;
+	line-height: 18px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #444444;
+	font-size: 14px;
+	text-align: left;
+}
+
+#container.community div.card>div.board>a.list {
+	padding: 10px;
+}
+
+#container.community div.card h3 {
+	padding: 10px;
+}
+
+#container.community div.card h3>a {
+	line-height: 20px;
+	color: #54469f;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+	display: block;
+}
+
+#container.community div.card>div.board>a.list>time {
+	float: right;
+	margin-left: 10px;
+	height: 17px;
+	line-height: 18px;
+	color: #a6a6a6;
+	font-size: 11px;
+	letter-spacing: 0;
+}
+
+#container.community div.card>div.board>a {
+	display: block;
+	padding: 10px;
+	border-top: 1px solid #e3e3e3;
+}
+
+#container.community div.card>div.board>a:hover {
+	background-color: #f9f9f9;
+}
+
+.rightside {
+	margin: 0;
+	padding: 0 0px;
+	width: 200px;
+	height: 1000px;
+	background-color: #FFF;
+}
+
+/* 게시판 중앙 */
+#container.board div.wrap {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 800px;
+	background-color: #FFF;
+}
+
+#container.board div.main {
+	margin: 10px 0 0 10px;
+	padding: 0;
+	width: 99%;
+	height: 100%;
+	background-color: #FFF;
+}
+
+#container.board div.main>div.board {
+	float: left;
+	margin: 0px 5px 5px 0px;
+	width: 99%;
+	/*border: 1px solid #e3e3e3;*/
+	overflow: hidden;
+	background-color: #fff;
+}
+
+#container.board div.main>div.board>div.title {
+	float: left;
+	margin: 0 0 5px 0;
+	width: 99.5%;
+	height: 60px;
+	overflow: hidden;
+	background-color: #fff;
+	border: 1px solid #b8b0e0;
+	border-radius: 4px;
+	box-shadow: 0px 2px 5px 1px rgba(71, 84, 112, 0.15);
+}
+
+#container.board div.main>div.board>div.title>h1 {
+	padding: 20px;
+}
+
+#container.board div.main>div.board>div.title>h1>a {
+	line-height: 20px;
+	color: #54469f;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+	display: block;
+}
+
+#container.board div.main>div.board>div.articles {
+	float: left;
+	margin: 0 0 3px 0;
+	width: 100%;
+	/*border: 1px solid #e3e3e3;*/
+	overflow: hidden;
+	background-color: #fff;
+}
+
+/* 글쓰기 */
+#container.board div.main>div.board>div.articles>form.write {
+	position: relative;
+	margin-bottom: 5px;
+	width: 99.8%;
+	border: 2px solid #b8b0e0;
+	box-sizing: border-box;
+	border-radius: 4px;
+	height: 433px;
+	box-shadow: 0px 2px 10px 1px rgba(71, 84, 112, 0.15);
+}
+
+#container.board div.main>div.board>div.articles>form.write :focus {
+	outline: none;
+}
+
+#container.board div.main>div.board>div.articles>form.write>p {
+	padding: 15px;
+	border-bottom: 1px solid #b8b0e0;
+	background-color: #fff;
+}
+
+#container.board div.main>div.board>div.articles>form.write input.title
+	{
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	border: 0;
+	color: #292929;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#container.board div.main>div.board>div.articles>form.write textarea {
+	width: 100%;
+	height: 300px;
+	border: 0;
+	color: #292929;
+	font-size: 14px;
+	resize: none;
+}
+
+#container.board div.main>div.board>div.articles>form.write ul.option li
+	{
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 40px 40px;
+	cursor: pointer;
+}
+
+#container.board div.main>div.board>div.articles>form.write input.file {
+	position: absolute;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	opacity: 0;
+}
+
+#container.board div.main>div.board>div.articles>form.write ul.option li.attach
+	{
+	float: left;
+	background-image:
+		url('/term/images/container.articles.write.attach.png');
+}
+
+#container.board div.main>div.board>div.articles>form.write ul.option li.submit
+	{
+	float: right;
+	background-color: #54469f;
+	background-image:
+		url('/term/images/container.articles.write.submit.png');
+}
+
+/* 글쓰기 열기전 */
+#container.board div.main>div.board>div.articles a.writeArticleButton {
+	display: block;
+	margin-bottom: 5px;
+	padding: 0 10px;
+	height: 50px;
+	line-height: 46px;
+	width: 99.8%;
+	border: 2px solid #b8b0e0;
+	box-sizing: border-box;
+	cursor: text;
+	color: #a6a6a6;
+	font-size: 14px;
+	border-radius: 4px;
+	background: #fdfcff
+		url('/term/images/container.write.background.png')
+		no-repeat right center;
+	background-size: 40px 40px;
+	box-shadow: 0px 2px 10px 1px rgba(71, 84, 112, 0.15);
+}
+
+/* 글 목록 */
+#container.board div.main>div.board>div.articles>hr {
+	float: left;
+	width: 96%;
+	height: 1px;
+	overflow: hidden;
+	background-color: #fff;
+	border-top: 0.1px solid #b8b0e0;
+}
+
+#container.board div.main>div.board>div.articles article {
+	float: left;
+	width: 99.5%;
+	height: 100px;
+	/*border: 1px solid #e3e3e3;*/
+	overflow: hidden;
+	background-color: #fff;
+	border: 1px solid #e7e2fe;
+	border-radius: 4px;
+	margin-bottom: 2px;
+	box-shadow: 0px 2px 7px 1px rgba(71, 84, 112, 0.15);
+}
+
+#container.board div.main>div.board>div.articles>article>a.article {
+	display: block;
+	margin: 13px;
+	width: 96%;
+	height: 80px;
+	/*border: 1px solid #e3e3e3;*/
+	overflow: hidden;
+	cursor: auto;
+}
+
+#container.board div.main>div.board>div.articles>article>a.article[href]
+	{
+	cursor: pointer;
+}
+
+#container.board div.main>div.board>div.articles>article:hover {
+	background-color: #fdfcff;
+}
+
+#container.board div.main>div.board>div.articles>article.onBoard {
+	height: auto;
+	margin-bottom : 5px;
+}
+
+#container.board div.main>div.board>div.articles>article.onBoard:hover
+{
+	background-color: #ffffff;
+}
+#container.board div.main>div.board>div.articles>article.onBoard>a.article>h3 {
+	color: #493b93;
+	margin-bottom: 5px;
+	line-height: 18px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: left;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+#container.board div.main>div.board>div.articles>article.onBoard>a.article{
+	height: auto;
+}
+
+#container.board div.main>div.board>div.articles>article.onBoard>a.article>p {
+	color: #444;
+	margin-bottom: 5px;
+	line-height: 18px;
+	word-wrap: break-word;
+	text-overflow: clip; 
+	max-width : 800px;
+	white-space:normal;
+	text-align: left;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+
+#container.board div.main>div.board>div.articles>article.onBoard>a.article>time {
+	color: #666;
+	float: left;
+	margin-left: 5px;
+	height: 15px;
+	line-height: 15px;
+	font-size: 11px;
+}
+
+#container.board div.main>div.board>div.articles>article.onBoard>a.article>hr {
+	margin-top: 24px;
+	margin-bottom: 8px;
+	border-top: 1px solid #b8b0e0;
+}
+
+#container.board div.main>div.board>div.articles>article.onBoard>div.writer {
+	border-top: 1px solid #e7e2fe;
+	padding : 5px;
+	width: 100%;
+}
+
+#container.board div.main>div.board>div.articles>rticle.onBoard>div.writer div.profile
+	{
+	float: left;
+	height: 100%;
+	width: 50px;
+	background-color: #fff;
+}
+
+#container.board div.main>div.board>div.articles>article.onBoard>div.writer img.profile
+	{
+	margin: 11px 10px 0px 17px;
+	display: block;
+	width: 40px;
+	height: 40px;
+	box-sizing: border-box;
+	border-radius: 7px;
+}
+
+#container.board div.main>div.board>div.articles>article.onBoard>div.writer div.profile h3
+	{
+	color: #54469f;
+	font-size: 12px;
+	margin-top: 5px;
+	line-height: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	font-weight: normal;
+	font-weight: bold;
+}
+
+#container.board div.main>div.board>div.articles>article.onBoard>a.article ul li.delete span:hover
+{
+	cursor:pointer
+}
+#container.board div.main>div.board>div.articles>article.onBoard>a.article ul li.modify span:hover
+{
+	cursor:pointer
+}
+
+
+
+
+/* 위로는 게시글 onBoard */
+
+/* 게시판 보드 */
+	
+#container.board div.main>div.board>div.articles>article>a.article ul {
+	float:right;
+	list-style: none;
+}
+
+#container.board div.main>div.board>div.articles>article>a.article ul li
+	{
+	float: left;
+	}
+#container.board div.main>div.board>div.articles>article>a.article ul li.button
+{
+	margin-right : 5px;
+	margin-left : 5px;
+	color: #54469f;
+	float: right;
+	line-height: 16px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+
+
+#container.board div.main>div.board>div.articles>article>a.article ul li.delete
+	{
+	margin: 5px;
+	float: right;
+	color: #54469f;
+	font-size: 8px;
+}
+
+
+
+#container.board div.main>div.board>div.articles>article>a.article ul li.modify
+	{
+	margin: 5px;
+	float: right;
+	color: #54469f;
+	font-size: 8px;
+}
+
+
+
+#container.board div.main>div.board>div.articles>article>a.article>h3 {
+	color: #493b93;
+	margin-bottom: 5px;
+	line-height: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: left;
+	font-size: 14px;
+	font-weight: bold;
+	
+
+	
+}
+
+#container.board div.main>div.board>div.articles>article>a.article>p {
+	color: #444;
+	margin-bottom: 5px;
+	line-height: 18px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 30px;
+	text-align: left;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+#container.board div.main>div.board>div.articles>article>a.article>time
+	{
+	color: #666;
+	float: left;
+	margin-right: 5px;
+	height: 15px;
+	line-height: 15px;
+	font-size: 11px;
+}
+
+#container.board div.main>div.board>div.articles>article>a.article>h2 {
+	color: #000;
+	float: left;
+	max-width: 90px;
+	height: 15px;
+	line-height: 15px;
+	font-size: 11px;
+	font-weight: normal;
+	letter-spacing: 0;
+}
+
+#container.board div.main>div.board>div.articles>article>a.article>div.article_bottom
+{
+	text-align:center;
+	
+}
+#container.board div.main>div.board>div.articles>article>a.article>div.article_bottom > ul {
+	display: inline-block;
+	list-style-type: none;
+	text-decoration: none;
+	float:none;
+}
+
+#container.board div.main>div.board>div.articles>article>a.article>div.article_bottom >ul>li
+	{
+	float: left;
+	margin-left: 8px;
+	padding: 0 2px;
+	height: 20px;
+	line-height: 20px;
+	color: #54469f;
+	font-size: 12px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 11px 11px;
+}
+
+
+
+#container.board div.main>div.board>div.articles>article>a.article>div.article_bottom>ul li.vote-down:hover
+{
+	cursor:pointer
+}
+
+#container.board div.main>div.board>div.articles>article>a.article>div.article_bottom>ul li.vote-up:hover
+	{
+	cursor:pointer
+}
+
+#container.board div.main>div.board>div.articles>article>a.article>div.article_bottom>ul li.vote-down
+	{
+	float: right;
+	font-size: 13px;
+}
+#container.board div.main>div.board>div.articles>article>a.article>div.article_bottom>ul li.vote-up
+	{
+	float: right;
+	font-size: 13px;
+}
+#container.board div.main>div.board>div.articles>article>a.article>div.article_bottom >ul>li.vote-up > img.reco
+	{
+	margin: 2px 5px 5px 5px;
+	float: left;
+	width: 14px;
+	height: 14px;
+}
+
+
+
+#container.board div.main>div.board>div.articles>article>a.article>div.article_bottom >ul>li.vote-down > img.reco
+	{
+	margin: 5px;
+	float: left;
+	width: 14px;
+	height: 14px;
+}
+#container.board div.main>div.board>div.articles div.writer
+{
+	height : 71px;
+	background-color : #f0edff;
+	overflow:hidden;
+}
+#container.board div.main>div.board>div.articles div.profile-text
+	{
+	margin-right:5px;
+	float: right;
+	height: 100%;
+	width: 710px;
+	background-color: transparent;
+}
+
+#container.board div.main>div.board>div.articles div.writer div.profile
+	{
+	float: left;
+	height: 100%;
+	width: 50px;
+	background-color: transparent;
+}
+	
+#container.board div.main>div.board>div.articles div.writer div.profile-text ul {
+	display: block;
+	list-style: none;
+}
+#container.board div.main>div.board>div.articles div.writer article ul.profile-top li
+	{
+	float: right;
+}
+
+#container.board div.main>div.board>div.articles>article  ul.profile-top li.nickname
+	{
+	float: left;
+	margin: 10px 0px 5px 5px;
+	height: 20px;
+	line-height: 20px;
+	color: #272727;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#container.board div.main>div.board>div.articles>article ul.profile-top li.level
+	{
+		
+	float: left;
+	margin: 10px 5px 0px 5px;
+	height: 20px;
+	width: 200px;
+	line-height: 20px;
+	color: #a6a6a6;
+	font-size: 12px;
+}
+#container.board div.main>div.board>div.articles>article div.profile-text p.large {
+	display: block;
+	margin: 0px 5px 15px 5px;
+	line-height: 20px;
+	font-size: 14px;
+	color: #796bc2;
+	font-family: "맑은 고딕", 돋움, tahoma;
+	_font-family: 돋움, tahoma;
+
+	letter-spacing: -0.5px;
+}
+
+/*게시판용 업다운*/
+
+#container.board div.main>div.board>div.articles>article>a.article>ul>li
+	{
+	float: left;
+	margin-left: 8px;
+	padding: 0 2px;
+	height: 20px;
+	line-height: 20px;
+	color: #a6a6a6;
+	font-size: 12px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 11px 11px;
+}
+#container.board div.main>div.board>div.articles>article>a.article> ul {
+	margin : 0px;
+	float:right;
+}
+
+
+#container.board div.main>div.board>div.articles>article>a.article>ul>li.comment
+	{
+	padding-left: 15px;
+	color: #54469f;
+
+}
+
+#container.board div.main>div.board>div.articles>article>a.article>ul>li.comment > img.reco
+	{
+	margin: 5px;
+	float: left;
+	width: 12px;
+	height: 12px;
+}
+
+#container.board div.main>div.board>div.articles>article>a.article>ul>li
+	{
+	float: left;
+	margin-left: 8px;
+	padding: 0 2px;
+	height: 20px;
+	line-height: 20px;
+	color: #54469f;
+	font-size: 12px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 11px 11px;
+}
+
+
+#container.board div.main>div.board>div.articles>article>a.article>ul li.vote-down:hover
+	{
+		cursor:pointer
+		}
+
+#container.board div.main>div.board>div.articles>article>a.article>ul li.vote-up:hover
+	{
+		cursor:pointer
+		}
+#container.board div.main>div.board>div.articles>article>a.article>ul li.vote-down
+	{
+	float: right;
+	font-size: 13px;
+}
+#container.board div.main>div.board>div.articles>article>a.article>ul li.vote-up
+	{
+	float: right;
+	font-size: 13px;
+}
+#container.board div.main>div.board>div.articles>article>a.article>ul>li.vote-up > img.reco
+	{
+	margin: 2px 5px 5px 5px;
+	float: left;
+	width: 12px;
+	height: 12px;
+}
+#container.board div.main>div.board>div.articles>article>a.article>ul>li.vote-down > img.reco
+	{
+	margin: 5px;
+	float: left;
+	width: 12px;
+	height: 12px;
+}
+
+
+
+
+
+
+
+/* 댓글 */
+
+
+#container.board div.main>div.board>div.articles>div.comments article {
+	height: auto;
+	margin-bottom:5px;
+
+}
+#container.board div.main>div.board>div.articles>div.comments article.child {
+	float:right;
+	width: 95%;
+	
+}
+
+
+#container.board div.main>div.board>div.articles>div.comments div.comment
+	{
+	margin-right:5px;
+	float: right;
+	height: 100%;
+	width: 710px;
+	background-color: #fff;
+}
+#container.board div.main>div.board>div.articles>div.comments article.child div.comment {
+
+	
+	float: right;
+	height: 100%;
+	width:672px;
+	background-color: #fff;
+}
+	
+	
+	
+	
+	
+	
+#container.board div.main>div.board>div.articles>div.comments ul {
+	display: block;
+	list-style: none;
+}
+
+#container.board div.main>div.board>div.articles>div.comments ul.comment-top li
+	{
+	float: left;
+}
+
+#container.board div.main>div.board>div.articles>div.comments ul.comment-top li.nickname
+	{
+	float: left;
+	margin: 10px 5px 5px 5px;
+	height: 20px;
+	line-height: 20px;
+	color: #272727;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#container.board div.main>div.board>div.articles>div.comments ul.comment-top li.level
+	{
+		
+	float: left;
+	margin: 10px 5px 0px 5px;
+	height: 20px;
+	width: 20px;
+	line-height: 20px;
+	color: #a6a6a6;
+	font-size: 12px;
+}
+
+#container.board div.main>div.board>div.articles>div.comments ul.comment-top li.time
+	{
+	float: left;
+	margin: 10px 5px 5px 5px;
+	height: 20px;
+	line-height: 20px;
+	color: #a6a6a6;
+	font-size: 12px;
+}
+
+
+#container.board div.main>div.board>div.articles>div.comments ul.comment-top li.button
+	{
+	margin-right : 5px;
+	margin-left : 5px;
+	color: #54469f;
+	float: right;
+	line-height: 16px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+#container.board div.main>div.board>div.articles>div.comments ul.comment-top li.delete
+	{
+	margin: 5px;
+	float: right;
+	color: #54469f;
+	font-size: 8px;
+}
+
+
+#container.board div.main>div.board>div.articles>div.comments ul.comment-top li.delete span:hover
+	{
+cursor:pointer
+}
+
+
+
+#container.board div.main>div.board>div.articles>div.comments p.large {
+	display: block;
+	margin: 0px 5px 5px 5px;
+	line-height: 20px;
+	font-size: 14px;
+	color: #272727;
+	font-family: "맑은 고딕", 돋움, tahoma;
+	_font-family: 돋움, tahoma;
+
+	letter-spacing: -0.5px;
+}
+
+#container.board div.main>div.board>div.articles>div.comments ul.comment-bottom li
+	{
+	
+	margin: 5px 5px 5px 5px;
+
+	
+	color: #54469f;
+	font-weight: bold;
+	text-align: center;
+}
+#container.board div.main>div.board>div.articles>div.comments ul.comment-bottom li.child-comment
+{
+	float: left;
+	font-size: 13px;
+}
+#container.board div.main>div.board>div.articles>div.comments ul.comment-bottom li.vote-up
+	{
+	float: right;
+	font-size: 13px;
+}
+
+#container.board div.main>div.board>div.articles>div.comments ul.comment-bottom li.vote-down
+	{
+	float: right;
+	font-size: 13px;
+}
+#container.board div.main>div.board>div.articles>div.comments ul.comment-bottom li.vote-up > img.reco
+	{
+	margin: 2px 5px 5px 5px;
+	float: left;
+	width: 14px;
+	height: 14px;
+}
+
+
+#container.board div.main>div.board>div.articles>div.comments ul.comment-bottom li.vote-down > img.reco
+	{
+	margin: 5px;
+	float: left;
+	width: 14px;
+	height: 14px;
+}
+
+#container.board div.main>div.board>div.articles>div.comments ul.comment-bottom li.vote-down:hover
+	{
+		cursor:pointer
+		}
+#container.board div.main>div.board>div.articles>div.comments ul.comment-bottom li.vote-up:hover
+{
+	cursor:pointer
+		
+}
+#container.board div.main>div.board>div.articles>div.comments div.profile
+	{
+	float: left;
+	height: 100%;
+	width: 50px;
+	background-color: #fff;
+}
+
+#container.board div.main>div.board>div.articles>div.comments div.profile img.profile
+	{
+	margin: 11px 10px 0px 17px;
+	display: block;
+	width: 40px;
+	height: 40px;
+	box-sizing: border-box;
+	border-radius: 7px;
+}
+
+#container.board div.main>div.board>div.articles>div.comments div.profile h3
+	{
+	color: #54469f;
+	font-size: 12px;
+	margin-top: 5px;
+	line-height: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	font-weight: normal;
+	font-weight: bold;
+}
+
+/* 댓글 쓰기 */
+#container.board div.main>div.board>div.articles article.comment {
+	height: auto;
+}
+#container.board div.main>div.board>div.articles article.comment-child {
+	float:right;
+	width: 95%;
+	margin-right:0px;
+}
+#container.board div.articles article form.writecomment {
+	position: relative;
+	background-color: #f8f8f8;
+}
+
+#container.board div.articles article form.writecomment input.text {
+	display: block;
+}
+
+#container.board div.articles article form.writecomment ul.option {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 40px;
+	font-size: 0;
+}
+
+#container.board div.articles article form.writecomment ul.option li {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 40px 40px;
+	cursor: pointer;
+}
+
+#container.board div.articles article form.writecomment ul.option li.submit
+	{
+	background-color: #8a7dd1;
+	background-image:
+		url('/term/images/container.articles.write.submit.png');
+}
+
+
+
+
+
+
+
+#container.board div.articles article form.writecomment input.text {
+	margin: 0;
+	padding: 10px 85px 10px 10px;
+	border: 0;
+	width: 100%;
+	height: 40px;
+	line-height: 20px;
+	box-sizing: border-box;
+	color: #262626;
+	font-size: 13px;
+	overflow: hidden;
+	resize: none;
+	background-color: transparent;
+}
+
+#container.board div.articles article form.writecomment :focus {
+	outline: none;
+}
+
+/* pagination */
+#container.board div.pagination {
+	display: block;
+}
+
+#container.board div.pagination>form.search {
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+	padding: 5px 25px 6px 5px;
+	border: 1px solid #b8b0e0;
+	border-radius: 3px;
+	
+	background: transparent
+		url('/term/images/container.articles.pagination.search.png')
+		no-repeat right 10px center;
+	background-size: 16px 16px;
+}
+
+#container.board div.pagination>form.search select {
+	float: left;
+	margin-right: 5px;
+	height: 19px;
+	line-height: 19px;
+	border: 0;
+	color: #54469f;
+	font-size: 12px;
+	background-color: transparent;
+}
+
+#container.board div.pagination>form.search :focus {
+	outline: none;
+}
+
+#container.board div.pagination>form.search option {
+	font-weight: normal;
+	display: block;
+	white-space: nowrap;
+	min-height: 1.2em;
+	padding: 0px 2px 1px;
+}
+
+#container.board div.pagination>form.search>input.text {
+	height: 19px;
+	line-height: 19px;
+	margin: 0 5px 0 0;
+	border: 0;
+	width: 135px;
+	color: #b8b0e0;
+	font-size: 14px;
+	background-color: transparent;
+}
+
+#container.board div.pagination>a.prev {
+	float: left;
+	width: 60px;
+	height: 30px;
+	line-height: 25px;
+	margin: 5px;
+	padding: 3px 0 0 0;
+	text-align: center;
+	border: 1px solid #54469f;
+	border-radius: 3px;
+	color: #54469f;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#container.board div.pagination>a.next {
+	float: right;
+	width: 60px;
+	height: 30px;
+	line-height: 25px;
+	margin: 5px;
+	padding: 3px 0 0 0;
+	text-align: center;
+	border: 1px solid #54469f;
+	border-radius: 3px;
+	color: #54469f;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#container.board div.pagination>div.wrap_pages {
+	float: none;
+	display: block;
+	margin-left: 170px;
+	padding-left: 150px;
+	width: 800px;
+	height: 50px;
+}
+
+#container.board div.pagination ul.pages {
+	height: 50px;
+	text-align: center;
+	float: none;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+#container.board div.pagination ul.pages>li {
+	float: left;
+	margin-left: 8px;
+	padding: 0 2px;
+	height: 40px;
+	line-height: 40px;
+	width: 25px;
+}
+
+#container.board div.pagination ul.pages>li>a {
+	color: #54469f;
+	font-size: 18px;
+}
+
+#container.board div.pagination ul.pages>li.select>a {
+	font-weight: bold;
+}

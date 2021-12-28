@@ -1,0 +1,18 @@
+body {font-family:sans-serif;}
+
+.import {padding-bottom:0.2em;}
+.import input[type=text] {width:630px;}
+
+.valid {background-color:limegreen;}
+.invalid {background-color:red;}
+.imported_square {background-color:lightgray;}
+.selected_number {background-color:#e2ebf3;}
+
+
+.sudoku {width: 477px; height: 477px; border:3px solid #344861; border-collapse: collapse; table-layout:fixed;}
+.sudoku tr {height:53px; padding:0;}
+.sudoku td {width:53px; padding:0; border:1px solid #bec6d4; width:1em;}
+.sudoku input {z-index: 2; width: 100%;  height: 100%;  font-size:30pt; text-align:center;  padding: 0; border-width: 0;}
+.sudoku .thick_right {border-right:3px solid #344861;}
+.sudoku .thick_bottom {border-bottom:3px solid #344861;}
+.sudoku .innertable {width: 55px; height: 5px; z-index: 1; border-collapse: collapse; table-layout:fixed;}
