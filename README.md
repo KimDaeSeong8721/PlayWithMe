@@ -1,4 +1,4 @@
 # PlayWithMe
-Soduko Game && Board website
+Soduko Game && Board website with JSP
 
 
